@@ -6,9 +6,9 @@
     'category': 'Payment Acquirer',
     'summary': 'Payment Acquirer: MygateGlobal Implementation',
     'description': """
-    MygateGlobal Payment Acquirer for India.
+    MygateGlobal Payment Acquirer for South Africa.
 
-    MygateGlobal payment gateway supports only INR currency.
+    MygateGlobal payment gateway supports ZAR currency.
     """,
     'depends': ['payment', 'website_sale'],
     'data': [
