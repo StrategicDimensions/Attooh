@@ -10,7 +10,8 @@
         <input type="hidden" name="MerchantReference" t-att-value="merchantReference"/>
         <input type="hidden" name="Amount" t-att-value="amount"/>
         <input type="hidden" name="txtCurrencyCode" t-att-value="txtCurrencyCode"/>
-        <input type="hidden" name="RedirectSuccessfulURL" t-att-value="redirectSuccessfulURL"/>
+        <input type="hidden" name="RedirectSuccessfulURL" t-attf-value="#{redirectSuccessfulURL}?return_url=#{return_url}"/>
+        <input type="hidden" name="return_url" t-att-value="return_url"/>
         <input type="hidden" name="RedirectFailedURL" t-att-value="redirectFailedURL"/>
     <!-- Fields for Clients Shipping Details -->
         <input type="hidden" name="Recipient" t-att-value="recipient"/> 

@@ -39,6 +39,7 @@ class PaymentAcquirerMygate(models.Model):
                             txtCurrencyCode=values['currency'] and values['currency'].name or '',
                             redirectSuccessfulURL=urls.url_join(base_url, '/payment/mygate/return'),
                             redirectFailedURL=urls.url_join(base_url, '/payment/mygate/error'),
+                            return_url= values.get('return_url'),
                             recipient=values.get('partner_name'),
                             shippingAddress1=values.get('partner_address'),
                             shippingAddress2=values.get('partner_zip'),
